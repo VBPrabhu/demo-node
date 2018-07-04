@@ -3,9 +3,8 @@ import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { TabsPage } from '../pages/tabs/tabs';
-import { DEV, TEST, ACPT } from '../services/environment.dev';
-declare var getEnv: any;
-declare var myNewValue: any;
+/*import { DEV, TEST, ACPT } from '../services/environment.dev';*/
+declare var envVariable: any;
 @Component({
   templateUrl: 'app.html'
 })
@@ -18,11 +17,11 @@ export class MyApp {
       // Here you can do any higher level native things you might need.
       statusBar.styleDefault();
       splashScreen.hide();    
-      console.log(getEnv);
+    /*  console.log(getEnv);
       console.log(DEV);
       console.log(TEST);
-      console.log(ACPT);
-      console.log(myNewValue);
+      console.log(ACPT);*/
+      console.log(envVariable);
     });
   }
 }
